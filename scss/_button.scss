@@ -1,0 +1,98 @@
+@mixin mixBtn ($w, $bg) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: $bg;
+    color: #fff;
+    border-radius: 5px;
+    width: $w;
+    height: 40px;    
+} 
+
+$B40: #5AAFF5;
+$B50: #0070CC;
+$B60: #005AA5;
+$bk: #000;
+$accent: #6D87A7;           
+$error: #811702;
+$warning: #F9E055;
+$valid: #038144;
+
+
+@mixin solidBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #666;
+    color: #fff;
+    border-radius: 5px;
+    max-width: 120px;
+    height: 40px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #666;
+    color: #fff;
+    border-radius: 5px;
+    max-width: 120px;
+    height: 40px;
+    color: #811
+}
+
+.red {background-color: red;}
+.blue {background-color: blue;}
+
+.box {
+    // @include solidBtn;
+    @include mixBtn(300px, red);
+}
+
+.profile {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    aspect-ratio: auto 1/1;
+    border: 1px solid red;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 50%;
+    background: #f8f8fa url("https://lib.yongin.go.kr/include/image/board/noimg_card.png") 50% 50% no-repeat;
+    background-size: cover;
+}
+.profile.lg {width: 500px; font-size: 30px;}
+.profile.sm {width: 20px; font-size: 10px;}
+.profile .on {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: blue;
+    width: 20px;
+    aspect-ratio: auto 1/1;
+    font-size: 0;
+    line-height: 0;
+}
+.profile.name {
+    background: red;
+    color: #005AA5;
+    color: #000
+
+}
+
+table{border-collapse:collapse;border-spacing:0;line-height:1;}
+caption{display:none;}
+
+.table-scroll {
+    min-width: 320px;
+}
+.table {
+    width: 100%;
+}
