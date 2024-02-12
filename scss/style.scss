@@ -12,8 +12,6 @@
     white-space: nowrap;
     clip: rect(0, 0, 0, 0);
   }
-  
-
   @mixin ellipsis($lines: 1) {
     @if ($lines==1) {
       overflow: hidden;
