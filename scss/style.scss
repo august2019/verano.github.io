@@ -13,6 +13,7 @@
     clip: rect(0, 0, 0, 0);
   }
 
+  //커밋1
   
   @mixin ellipsis($lines: 1) {
     @if ($lines==1) {
